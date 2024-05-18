@@ -1,0 +1,141 @@
+* {
+  padding: 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: all 0.8s ease;
+}
+
+.body-toggler.dark {
+  background: linear-gradient(45deg, #2b1515, #182256);
+}
+.body-toggler {
+  background: linear-gradient(45deg, #ffc800, #00ff95);
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+  background-color: #f1f2fa;
+}
+.calculator #display {
+  color: #0a1e23;
+  margin: 30px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculator #equal {
+  height: 130px;
+}
+.calculator #clear {
+  background-color: #00ff77;
+  color: #000000;
+}
+.calculator .btn-number {
+  background-color: #ededed;
+  color: #000000;
+}
+.calculator .btn-operator {
+  background-color: #00eaff;
+  color: #545454;
+}
+.calculator .btn-equal {
+  background-color: #00ffa6;
+  color: #000;
+}
+.calculator.dark {
+  background-color: #1b1b1b;
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+}
+.calculator.dark #display {
+  color: #f8fafb;
+}
+.calculator.dark #clear {
+  background-color: #ff0000;
+  color: white;
+}
+.calculator.dark .btn-number {
+  background-color: #bebe9c;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: #ffa200;
+  color: #430049;
+}
+.calculator.dark .btn-equal {
+  background-color: #26ff00;
+  color: #ffffff;
+}
+
+#theme-toggler {
+  position: relative;
+  top: 0px;
+  left: 135px;
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  background: #454343;
+  transition: 0.5s;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+#theme-toggler .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #444, #222);
+  cursor: pointer;
+  transform: scale(0.9);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+#theme-toggler.active {
+  background: #ffffff;
+  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#theme-toggler.active .indicator {
+  left: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgb(255, 255, 255),
+    inset 0 -4px 4px rgb(182, 178, 178);
+  background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+}
+button {
+  height: 70px;
+  width: 70px;
+  border: 0;
+  border-radius: 50px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
